@@ -1,0 +1,30 @@
+[
+  {
+    "id": "R001",
+    "pattern": "(without prescription|without a prescription|buy antibiotics|get antibiotics)",
+    "action": "BLOCK",
+    "severity": "HIGH",
+    "explanation": "Requesting prescription drugs without a prescription"
+  },
+  {
+    "id": "R002",
+    "pattern": "(how to inject|inject .* at home|administer iv|suture|suture a wound|make a saline iv)",
+    "action": "BLOCK",
+    "severity": "HIGH",
+    "explanation": "Procedural medical instructions likely to cause harm if followed without supervision"
+  },
+  {
+    "id": "R003",
+    "pattern": "(what are symptoms|symptoms of|where can i get|clinic near me)",
+    "action": "ALLOW",
+    "severity": "LOW",
+    "explanation": "General informational query"
+  },
+  {
+    "id": "R004",
+    "pattern": "(hurt myself|kill myself|want to die)",
+    "action": "BLOCK",
+    "severity": "HIGH",
+    "explanation": "Self-harm related request — immediate human intervention recommended"
+  }
+]

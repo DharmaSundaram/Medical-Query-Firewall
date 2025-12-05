@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Medical Query Firewall — Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; background:#f8f9fb; }
+    .chat { width: 700px; margin: auto; }
+    .log { border:1px solid #ddd; padding:12px; background:#fff; height:320px; overflow:auto; }
+    .input { margin-top:12px; display:flex; gap:8px; }
+    textarea { width:100%; height:60px; }
+    button { padding:8px 16px; }
+    .block { color:#b71c1c; }
+    .warn { color:#ff9800; }
+    .allow { color:#2e7d32; }
+    pre { background:#f0f0f0; padding:8px; }
+  </style>
+</head>
+<body>
+  <div class="chat">
+    <h2>Medical Query Firewall — Demo</h2>
+    <div class="log" id="log"></div>
+    <div class="input">
+      <textarea id="msg" placeholder="Type a medical query..."></textarea>
+      <div style="display:flex;flex-direction:column;">
+        <button id="send">Send</button>
+        <button id="sample" style="margin-top:6px">Use Sample Queries</button>
+      </div>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+  <!-- === ADMIN DOWNLOAD SECTION === -->
+<div style="margin-top:20px; text-align:right;">
+    <button id="download-audit" style="padding:8px 16px;">Download Audit Logs</button>
+</div>
+
+<div id="admin-msg" style="margin-top:10px; color:#d32f2f; font-size:14px;"></div>
+<!-- === END ADMIN SECTION === -->
+
+</body>
+</html>
